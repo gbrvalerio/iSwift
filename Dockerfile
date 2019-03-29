@@ -58,4 +58,4 @@ EXPOSE 8888
 
 RUN mkdir notebooks
 
-CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--NotebookApp.token=", "--ip=0.0.0.0", "--notebook-dir=notebooks"]
+CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--allow-root", "--ip=0.0.0.0", "--notebook-dir=notebooks"]
